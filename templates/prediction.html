@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prediction</title>
+</head>
+<body>
+
+	<center>
+		<h1>Results</h1>
+
+		{% if data==1 %}
+		<h2>Prediction is : Apple</h2>
+		<img src="static\apple.jpg">
+		{% elif data==2 %}
+		<h2>Prediction is : Mandarin</h2>
+		<img src="static\mandarin.jpg">
+		{% elif data==3 %}
+		<h2> Prediction is : Orange</h2>
+		<img src="static\orange.jpg">
+		{% elif data==4 %}
+		<h2> Prediction is : Lemon</h2>
+		<img src="static\lemon.jpg">
+		{% else %}
+		<h2> ERROR</h2>
+		{% endif %}
+
+</body>
+</html>
